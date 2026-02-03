@@ -1,71 +1,76 @@
-# Heart Disease Risk Classification with Logistic Regression
+# Implementación de Regresión Logística desde Cero - Predicción de Enfermedad Cardíaca
 
-## Project Overview
+Este proyecto implementa un algoritmo de **Regresión Logística** manualmente (sin usar la clase `LogisticRegression` de scikit-learn) para predecir la presencia de enfermedad cardíaca. El objetivo es educativo, demostrando el funcionamiento interno del entrenamiento mediante Gradient Descent, cálculo de funciones de costo y métricas de evaluación.
 
-This repository presents an end-to-end implementation of **logistic regression built from scratch** to classify the presence of heart disease. The main goal is to understand the mathematical foundations of the algorithm rather than relying on high-level ML libraries.
+**Estudiante:** Juan Pablo Nieto Cortes  
+**Asignatura:** AREP Arquitectura Empresarial
 
-The project covers the full workflow, including:
+## Comenzando 🚀
 
-- Exploratory analysis of medical data
-- Manual implementation of logistic regression
-- Model evaluation and comparison
-- Regularization techniques to improve generalization
-- Initial exploration of cloud deployment options
+Estas instrucciones te permitirán obtener una copia del proyecto y ejecutarlo en tu máquina local para propósitos de desarrollo y pruebas.
 
-## Dataset Information
+### Prerrequisitos 📋
 
-### Origin
+Necesitas tener instalado Python 3 y Jupyter Notebook. Las librerías principales utilizadas son:
 
-**UCI Heart Disease Dataset (via Kaggle)**  
-https://www.kaggle.com/datasets/neurocipher/heartdisease
+*   [NumPy](https://numpy.org/) - Para operaciones matriciales y matemáticas.
+*   [Pandas](https://pandas.pydata.org/) - Para manipulación y análisis de datos.
+*   [Matplotlib](https://matplotlib.org/) - Para visualización de datos.
 
-### General Characteristics
+```bash
+pip install numpy pandas matplotlib jupyter
+```
 
-- **Number of records**: 303 patients
-- **Total features**: 14 medical attributes
-- **Target variable**: Binary (heart disease: yes / no)
-- **Class distribution**: ~55% positive cases
-- **Missing data**: None detected
-- **Patient age**: 29 to 77 years
-- **Cholesterol values**: 112–564 mg/dL
+### Instalación 🔧
 
-### Features Used for Training (8)
+1.  Clona este repositorio o descarga los archivos en tu máquina local.
+2.  Asegúrate de tener el dataset `Heart_Disease_Prediction.csv`. El notebook está configurado para buscarlo en una ruta específica o descargarlo automáticamente (si se usa el script adjunto).
+3.  Abre el notebook en Jupyter:
 
-The following features were selected after exploratory analysis:
+```bash
+jupyter notebook heart_disease_lr_analysis.ipynb
+```
 
-1. Age
-2. Serum Cholesterol
-3. Resting Blood Pressure
-4. Maximum Heart Rate Achieved
-5. ST Depression (exercise-induced)
-6. Number of Major Vessels (fluoroscopy)
-7. Chest Pain Category
-8. Exercise-Induced Angina
+## Ejecutando las pruebas ⚙️
 
-## Model Evaluation
+El notebook contiene celdas de ejecución paso a paso que actúan como verificación del modelo:
 
-### Logistic Regression (No Regularization)
+1.  **Carga de Datos**: Verifica que el dataset se carga correctamente y no tiene nulos.
+2.  **Entrenamiento**: Ejecuta el descenso de gradiente y observa la curva de costo disminuyendo.
+3.  **Evaluación**: Al final se imprimen métricas de precisión manuales.
 
-- **Training Accuracy**: 86.32%
-- **Test Accuracy**: 85.71%
-- **F1 Score (Test)**: 0.8571
-- **Optimization**: Gradient descent
-- **Hyperparameters**:
-  - Learning rate (α): 0.01
-  - Iterations: 1000
+### Analizando los resultados
 
-### Logistic Regression with L2 Regularization
+Se calculan las siguientes métricas manualmente (sin `sklearn`):
+*   Accuracy (Exactitud)
+*   Precision
+*   Recall
+*   F1 Score
 
-- **Regularization parameter (λ)**: 0.01
-- **Training Accuracy**: 86.32%
-- **Test Accuracy**: 86.81%
-- **F1 Score (Test)**: 0.8696
-- **Weight norm reduction**: ~15% compared to the unregularized model
+Ejemplo de salida esperada:
 
-### Feature Impact
+```text
+Dataset   Accuracy  Precision  Recall    F1 Score
+Train     0.85      0.88       0.82      0.85
+Test      0.83      0.86       0.80      0.83
+```
 
-Based on the magnitude of learned coefficients, the most relevant predictors were:
+## Construido con 🛠️
 
-1. ST Depression
-2. Number of Vessels (Fluoroscopy)
-3. Exercise-Induce
+*   [Jupyter Notebook](https://jupyter.org/) - Entorno interactivo de desarrollo.
+*   [Python](https://www.python.org/) - Lenguaje de programación.
+*   **Implementación propia** de algoritmos de Machine Learning (Sigmoide, Costo Log Loss, Gradient Descent, Ridge Regularization).
+
+## Autores ✒️
+
+*   **Juan Pablo Nieto Cortes** - *Trabajo Inicial & Documentación*
+
+## Licencia 📄
+
+Este proyecto es de uso académico y educativo.
+
+## Expresiones de Gratitud 🎁
+
+*   A la cátedra de **AREP Arquitectura Empresarial** por plantear este desafío.
+*   Al equipo de **Google Deepmind** por la asistencia técnica.
+*   Inspirado en los principios fundamentales del Machine Learning.
