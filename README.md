@@ -61,6 +61,19 @@ Test      0.83      0.86       0.80      0.83
 *   [Python](https://www.python.org/) - Lenguaje de programación.
 *   **Implementación propia** de algoritmos de Machine Learning (Sigmoide, Costo Log Loss, Gradient Descent, Ridge Regularization).
 
+## Evidencia de Despliegue 📸
+
+Esta sección demuestra que el modelo fue desplegado y probado exitosamente.
+
+### 1. Endpoint en Amazon SageMaker
+*(Reemplaza esta línea con una captura de pantalla de la consola de AWS mostrando el Endpoint en estado 'InService')*
+![SageMaker Endpoint](https://via.placeholder.com/600x200?text=Foto+del+Endpoint+en+AWS)
+
+### 2. Prueba de Predicción (Swagger UI / Local)
+*(Reemplaza esta línea con una captura de tu navegador mostrando Swagger UI funcionando o la terminal respondiendo)*
+![Prueba Local](https://via.placeholder.com/600x300?text=Foto+de+Swagger+o+Postman)
+
+
 ## Autores ✒️
 
 *   **Juan Pablo Nieto Cortes** - *Trabajo Inicial & Documentación*
