@@ -65,14 +65,9 @@ Test      0.83      0.86       0.80      0.83
 
 Esta sección demuestra que el modelo fue desplegado y probado exitosamente.
 
-### 1. Endpoint en Amazon SageMaker
-*(Reemplaza esta línea con una captura de pantalla de la consola de AWS mostrando el Endpoint en estado 'InService')*
-![SageMaker Endpoint](https://via.placeholder.com/600x200?text=Foto+del+Endpoint+en+AWS)
+![alt text](image.png)
 
-### 2. Prueba de Predicción (Swagger UI / Local)
-*(Reemplaza esta línea con una captura de tu navegador mostrando Swagger UI funcionando o la terminal respondiendo)*
-![Prueba Local](https://via.placeholder.com/600x300?text=Foto+de+Swagger+o+Postman)
-
+![alt text](image-1.png)
 
 ## Autores ✒️
 
@@ -85,5 +80,5 @@ Este proyecto es de uso académico y educativo.
 ## Expresiones de Gratitud 🎁
 
 *   A la cátedra de **AREP Arquitectura Empresarial** por plantear este desafío.
-*   Al equipo de **Google Deepmind** por la asistencia técnica.
+
 *   Inspirado en los principios fundamentales del Machine Learning.
